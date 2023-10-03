@@ -1,3 +1,4 @@
+-- societe
 CREATE TABLE `societe` (
   `id` int(11) NOT NULL,
   `nom_societe` varchar(255) NOT NULL,
