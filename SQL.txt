@@ -1,9 +1,9 @@
--- societe
 CREATE TABLE `societe` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nom_societe` varchar(255) NOT NULL,
   `prenom_directeur` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL UNIQUE,
   `password` varchar(255) NOT NULL,
-  `matrecule` varchar(255) NOT NULL
+  `matrecule` varchar(255) NOT NULL UNIQUE,
+  PRIMARY KEY (`id`)
 );
